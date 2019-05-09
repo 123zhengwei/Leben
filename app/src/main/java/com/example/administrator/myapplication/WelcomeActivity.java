@@ -32,7 +32,7 @@ public class WelcomeActivity extends Activity {
     };
 
     public void getHome(){
-        Intent intent = new Intent(WelcomeActivity.this, MainActivity.class);
+        Intent intent = new Intent(WelcomeActivity.this, LoginActivity.class);
         startActivity(intent);
         finish();
     }

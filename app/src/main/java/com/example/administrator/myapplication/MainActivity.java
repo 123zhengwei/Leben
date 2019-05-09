@@ -14,13 +14,7 @@ import android.widget.ImageButton;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
-import com.example.administrator.myapplication.R;
-import com.example.administrator.myapplication.AddressFragment;
-import com.example.administrator.myapplication.FrdFragment;
-import com.example.administrator.myapplication.LebenFragment;
-import com.example.administrator.myapplication.PopWindow;
-
-import com.example.administrator.myapplication.SettingFragment;
+import com.baidu.mapapi.SDKInitializer;
 
 
 //我们使用的是android v4包下的fragment,这里必须要继承自FragmentActivity，而不是Activity
@@ -52,6 +46,7 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
         initView();//初始化所有的view
         initEvents();
         setSelect(0);//默认显示Leben主界面
+
     }
 
     //添加按钮监听事件
@@ -208,7 +203,9 @@ public class MainActivity extends FragmentActivity implements OnClickListener{
         }
 
         return super.onKeyDown(keyCode, event);
+
     }
+
 
 }
 
